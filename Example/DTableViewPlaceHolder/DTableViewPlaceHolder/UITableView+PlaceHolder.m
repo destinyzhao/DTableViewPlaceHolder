@@ -58,10 +58,10 @@
         // 模式ScrollView可以滚动
         BOOL scrollEnabled = YES;
         if ([self respondsToSelector:@selector(enableScrollWhenPlaceHolderViewShowing)]) {
-            scrollEnabled = [self performSelector:@selector(enableScrollWhenPlaceHolderViewShowing)];
+            scrollEnabled = [[self performSelector:@selector(enableScrollWhenPlaceHolderViewShowing)] boolValue];
         }
         else if ([self.delegate respondsToSelector:@selector(enableScrollWhenPlaceHolderViewShowing)]) {
-            scrollEnabled = [self.delegate performSelector:@selector(enableScrollWhenPlaceHolderViewShowing)];
+            scrollEnabled = [[self.delegate performSelector:@selector(enableScrollWhenPlaceHolderViewShowing)] boolValue];
         }
         self.scrollEnabled = scrollEnabled;
         
