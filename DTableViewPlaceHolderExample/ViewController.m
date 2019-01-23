@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MJRefresh.h"
+#import <MJRefresh/MJRefresh.h>
 #import "UITableView+PlaceHolder.h"
 #import "EmptyStyleView.h"
 
