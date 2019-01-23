@@ -89,6 +89,7 @@
     });
 }
 
+#pragma mark - DTableViewPlaceHolderDelegate
 - (UIView *)makePlaceHolderView {
     EmptyStyleView *view = [EmptyStyleView loadXibView];
     view.emptyOverlayClicked = ^{
